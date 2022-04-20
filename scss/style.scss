@@ -8,19 +8,20 @@
   
   .sectionOneFlex {
     display: flex;
+    min-height: 100vh ;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin: 2rem 1rem 0 1rem;
+   /*  margin:  1rem 2rem; */
   }
   
-  .sectionOneCarousel {
+   .sectionOneCarousel {
     width: 600px;
-  }
-  
+  } 
+   
   .carousel_img {
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: auto;
   }
   
   .productosFlex {
@@ -58,6 +59,7 @@
     height: 5rem;
   }
 
+ 
 
   // scss-docs-start gray-color-variables
 $white:    #fff !default;
@@ -90,7 +92,7 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
+$blue:    #ed31b1 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;

@@ -9,21 +9,18 @@
 
 .sectionOneFlex {
   display: flex;
-  min-height: 100vh;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  /*  margin:  1rem 2rem; */
+  justify-content: space-evenly;
+  margin: 5rem 1rem 5 1rem;
 }
 
-.sectionOneCarousel {
-  width: auto;
-}
-
+/* .sectionOneCarousel {
+  width: 600px;
+} */
 .carousel_img {
-  width:auto;
+  width: 100%;
   height: auto;
-  margin-right: 4rem;
 }
 
 .productosFlex {
@@ -31,13 +28,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
-  margin-bottom: 4rem;
+  justify-content: center;
 }
 
 .productos {
   width: 350px;
-  margin: 2rem 1rem 2rem 1rem;
+  margin: 2rem 1rem 0 1rem;
 }
 
 .sectionThreeFlex {
@@ -11182,4 +11178,4 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.style.css.map */
