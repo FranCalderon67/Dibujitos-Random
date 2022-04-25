@@ -11,16 +11,17 @@
     min-height: 100vh ;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-   /*  margin:  1rem 2rem; */
+    justify-content: space-around;
+  
+   /*   margin:  1rem 2rem;  */
   }
   
    .sectionOneCarousel {
-    width: 600px;
+    width: auto;
   } 
    
   .carousel_img {
-    width: 100%;
+    width:auto;
     height: auto;
   }
   
@@ -29,7 +30,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
   }
   
   .productos {
@@ -63,7 +64,7 @@
 
   // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f7a3d0 !default;
+$gray-100: #fdaed8 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
