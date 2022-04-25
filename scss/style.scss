@@ -1,69 +1,92 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  .sectionOneFlex {
-    display: flex;
-    min-height: 100vh ;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  
-   /*   margin:  1rem 2rem;  */
-  }
-  
-   .sectionOneCarousel {
-    width: auto;
-  } 
-   
-  .carousel_img {
-    width:auto;
-    height: auto;
-  }
-  
-  .productosFlex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-  }
-  
-  .productos {
-    width: 350px;
-    margin: 2rem 1rem 0 1rem;
-  }
-  
-  .sectionThreeFlex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .experienciaClienteCard {
-    margin: 2rem 1rem 0 1rem;
-  }
-  
-  .footerFlex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .footerFlex__item {
-    width: 4rem;
-    padding-left: 25px;
-    height: 5rem;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 
- 
+.navbar {
+  position: fixed !important;
+  width: 100%;
+  z-index: 2;
+}
 
-  // scss-docs-start gray-color-variables
-$white:    #fff !default;
+.navbarList {
+  align-items: center;
+  margin-left: 20%;
+}
+
+.nav-item {
+  margin-left: 3rem;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../Imagenes/favicon.png") !important;
+}
+
+.logo {
+  height: 75px;
+  width: 75px;
+}
+
+.sectionOneFlex {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  /*   margin:  1rem 2rem;  */
+}
+
+.sectionOneCarousel {
+  width: auto;
+  margin-top: 8rem;
+}
+
+.carousel_img {
+  width: auto;
+  height: auto;
+}
+
+.productosFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.productos {
+  width: 350px;
+  margin: 2rem 1rem 0 1rem;
+}
+
+.sectionThreeFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.experienciaClienteCard {
+  margin: 2rem 1rem 0 1rem;
+}
+
+.footerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerFlex__item {
+  width: 4rem;
+  padding-left: 25px;
+  height: 5rem;
+}
+
+// scss-docs-start gray-color-variables
+$white: #fff !default;
 $gray-100: #fdaed8 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -73,7 +96,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black: #000 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -87,66 +110,75 @@ $grays: (
   "600": $gray-600,
   "700": $gray-700,
   "800": $gray-800,
-  "900": $gray-900
+  "900": $gray-900,
 ) !default;
 // scss-docs-end gray-colors-map
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #ed31b1 !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
-$teal:    #20c997 !default;
-$cyan:    #0dcaf0 !default;
+$blue: #ed31b1 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
 ) !default;
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
 ) !default;
 
-
-  
 @import "../node_modules/bootstrap/scss/bootstrap";
-  
+
+// @media (max-width: 768px) {
+//   .logo {
+//     display: none;
+//   }
+// }
+
+// @media (max-width: 425px) {
+//   .logo {
+//     display: none;
+//   }
+// }
