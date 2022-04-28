@@ -32,7 +32,7 @@
 
 .heroImage{
   background-image: url(../Imagenes/bg-textura.png);
-  width: auto;
+  width: 100%;
  
 }
 
@@ -41,7 +41,7 @@
   width: 150px;
   height: 47px;
   margin: auto;
-  background-color: #e854b9;
+/*   background-color: #e854b9; */
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -60,9 +60,9 @@
 .sectionOneFlex {
   display: flex;
   min-height: 100vh;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+
 
   /*   margin:  1rem 2rem;  */
 }
@@ -119,7 +119,7 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #f483c1 !default;
+$gray-600: #e476b3 !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
@@ -196,16 +196,37 @@ $theme-colors: (
   "dark": $dark,
 ) !default;
 
+
+//@media (max-width: 768px) {
+  //   .logo {
+  //     display: none;
+  //   }
+  // }
+  
+   @media (max-width: 425px) {
+  //   .logo {
+  //     display: none;
+  //   }
+  
+  .sectionOneFlex{
+    flex-direction: column;
+  }
+  
+  .carousel_img {
+    width: 100%;  
+    height: auto;
+  }
+
+  .sectionOneCarousel {
+    width: auto;
+    margin-top: 4rem;
+  }
+  
+  
+  
+   }
+  
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// @media (max-width: 768px) {
-//   .logo {
-//     display: none;
-//   }
-// }
-
-// @media (max-width: 425px) {
-//   .logo {
-//     display: none;
-//   }
-// }
+ 
