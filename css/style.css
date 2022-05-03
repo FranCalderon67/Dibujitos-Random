@@ -77,8 +77,8 @@
 }
 
 .carousel_img {
-  width: auto;
-  height: auto;
+  width: 600px;
+  height: 600px;
 }
 
 .productosTitulo {
@@ -142,7 +142,26 @@
   height: 5rem;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .carousel_img {
+    width: 420px;
+    height: 420px;
+  }
+  .navbarList {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 2rem;
+  }
+}
+
 @media (max-width: 425px) {
+  .logo {
+    display: none;
+  }
   .sectionOneFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -150,8 +169,8 @@
             flex-direction: column;
   }
   .carousel_img {
-    width: 100%;
-    height: auto;
+    width: 420px;
+    height: 420px;
   }
   .sectionOneCarousel {
     width: auto;
