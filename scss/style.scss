@@ -260,6 +260,13 @@ $theme-colors: (
     width: auto;
     margin-top: 4rem;
   }
+  .sectionThreeFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
