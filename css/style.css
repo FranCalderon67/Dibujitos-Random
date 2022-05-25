@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
 .navbar {
   position: fixed !important;
   width: 100%;
